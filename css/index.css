@@ -100,3 +100,7 @@ canvas {
   width: 100%;
   background: rgb(255, 100, 126);
 }
+
+.embed{
+  margin-left: 10%;
+}
