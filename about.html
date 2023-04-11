@@ -53,21 +53,20 @@
           </div>
         </div>
       </div>
-      <script src="./js/script.js"></script>
+      
       <div class="embed">
         <blockquote
-          id="kennedyquote"
+          id="bq"
           class="imgur-embed-pub"
           lang="en"
-          data-id="wrf1rGj" 
+          data-id="#" 
           data-context="false"
         >
-          <a href="//i.imgur.com/wrf1rGjK"></a>
+          <a id="href2" href="#"></a>
         </blockquote>
         <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
       </div>
     </div>
-
     <!-- <h1>hey there my name is amit</h1> -->
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -76,9 +75,21 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
   ></script>
-  <script src="./js/main.js"></script>
-
+  
   <script>
+    function op (){
+      alert(data);  
+      alert(href1);
+      let bq = document.getElementById("bq");
+      let href2 = document.getElementById("href2");
+      bq.setAttribute("data-id", data);
+      href2.setAttribute("href", href1);
+      alert(bq.getAttribute("data-id"));
+      return false;
+    }
+    // let data = "wrf1rGj";
+    // let url = "//i.imgur.com/wrf1rGj"
+    
     const toggle = document.getElementById("toggle1");
     toggle.onclick = function () {
       toggle.classList.toggle("active");
@@ -86,5 +97,7 @@
         window.location.reload();
       }, 2000);
     };
-  </script>
+    </script>
+<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>
 </html>
