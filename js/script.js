@@ -21,7 +21,6 @@ function fetchRequest(file, formData) {
         infoText.innerText = result ? "Upload QR Code to Scan" : "Couldn't scan QR Code";
         if(!result) return;
         document.querySelector("textarea").innerText = result;
-        // https://i.imgur.com/wrf1rGj.jpg
         form.querySelector("img").src = URL.createObjectURL(file);
         wrapper.classList.add("active");
     }).catch(() => {
@@ -39,9 +38,13 @@ fileInp.addEventListener("change", async e => {
 });
 
 copyBtn.addEventListener("click", () => {
-    let text = document.querySelector("textarea").textContent;
-    navigator.clipboard.writeText(text);
+    // let text = document.querySelector("textarea").textContent;
+    // navigator.clipboard.writeText(text);
+
+    // alert($(element).attr('data-id'));
+    // op2();
 });
 
 form.addEventListener("click", () => fileInp.click());
 closeBtn.addEventListener("click", () => wrapper.classList.remove("active"));
+    

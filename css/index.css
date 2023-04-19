@@ -23,7 +23,7 @@ canvas {
 }
 
 .slider {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
   width: 100%;
   height: 25px;
   background: #d3d3d3;
@@ -81,8 +81,7 @@ canvas {
   text-align: center;
 }
 
-
-.bruh{
+.bruh {
   position: absolute;
   margin-top: 250vh;
   height: auto;
@@ -90,7 +89,7 @@ canvas {
   background: rgb(255, 100, 126);
 }
 
-.bruhh{
+.bruhh {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +100,15 @@ canvas {
   background: rgb(255, 100, 126);
 }
 
-.embed{
+.embed {
   margin-left: 10%;
+}
+
+.trial {
+  margin-top: 90vh;
+  /* display: inline; */
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  background: paleturquoise;
 }
