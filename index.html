@@ -14,7 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <title>QRImage</title>
   </head>
-  <body  data-barba="wrapper" class="qr-page">
+
+  <body data-barba="wrapper" class="qr-page">
     <div class="load-container">
       <div class="loading-screen"></div>
     </div>
@@ -43,15 +44,13 @@
     <!-- <img src="" alt="" id="img" height="200"> -->
 
     <div class="bruh">
-      <div style="width: 50%; margin: 0 auto"  class="center"> 
+      <div style="width: 50%; margin: 0 auto" class="center">
         <br />
 
         <label>Image File (optional):</label>
         <input type="file" id="imageLoader" name="imageLoader" />
-        <span>
-          {Image you want to put inside your QR code.}
-        </span>
-        <br><br>
+        <span> {Image you want to put inside your QR code.} </span>
+        <br /><br />
         <!-- <p>
           Works better for square images (use an
           <a href="https://www.online-image-editor.com/">editor</a> as needed).
@@ -72,7 +71,7 @@
           Bit size:
           <span class="tooltiptext"
             >Larger sizes hide more of the image, but are easier to scan. I
-            found that a size of   30 works well.</span
+            found that a size of 30 works well.</span
           >
           <span id="printSize"></span>
         </div>
@@ -177,7 +176,9 @@
 
         <div class="center">
           <p>
-            *Please take note that these QR codes might not function properly with all QR code readers, so test them out first. Increasing the bit size can help if you are having difficulties getting them to read.
+            *Please take note that these QR codes might not function properly
+            with all QR code readers, so test them out first. Increasing the bit
+            size can help if you are having difficulties getting them to read.
           </p>
         </div>
 
@@ -194,5 +195,4 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
 </html>
